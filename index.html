@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        font-family: Arial, sans-serif;
+        background-color: hsl(221, 100%, 96%);
+        width: 80vw;
+        height: 80vh;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        padding-top: 50px;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .attribution a {
+        color: blue;
+      }
+
+      .outer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+      }
+
+      .inner {
+        width: 100%;
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      .innerLeft {
+        width: 50%;
+        background-color: #5e3bff;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+      }
+
+      .result-circle {
+        background-color: #4425c5;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .result-circle h1 {
+        font-size: 60px;
+        margin: 0;
+      }
+
+      .result-circle p {
+        margin: 0;
+        opacity: 0.6;
+      }
+
+      .innerRight {
+        width: 50%;
+        background-color: white;
+        padding: 30px;
+        border-radius: 20px;
+      }
+
+      .innerRight h2 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      .reaction,
+      .memory,
+      .verbal,
+      .visual {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .reaction {
+        background-color: #fff0f0;
+      }
+
+      .reaction-text {
+        color: #ff5757;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .memory {
+        background-color: #fffaf0;
+      }
+
+      .memory-text {
+        color: #ffb01f;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .verbal {
+        background-color: #f0fff8;
+      }
+
+      .verbal-text {
+        color: #00bd91;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .visual {
+        background-color: #f0f3ff;
+      }
+
+      .visual-text {
+        color: #1125d4;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+
+      .category-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .scores {
+        color: #333;
+      }
+
+      button {
+        background-color: #303b5a;
+        color: white;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #5e3bff;
+      }
+
+      img{
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="outer">
+        <div class="inner">
+          <div class="innerLeft">
+            <h2>Your Result</h2>
+            <div class="result-circle">
+              <h1>76</h1>
+              <p>of 100</p>
+            </div>
+            <h3>Great</h3>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+          <div class="innerRight">
+            <h2>Summary</h2>
+            <div class="reaction">
+              <div class="reaction-text">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="Reaction Image"
+                />
+                Reaction
+              </div>
+              <div class="scores"><b>80</b> / 100</div>
+            </div>
+            <div class="memory">
+              <div class="memory-text">
+                <img src="./assets/images/icon-memory.svg" alt="Memory Image" />
+                Memory
+              </div>
+              <div class="scores"><b>92</b> / 100</div>
+            </div>
+            <div class="verbal">
+              <div class="verbal-text">
+                <img src="./assets/images/icon-verbal.svg" alt="Verbal Image" />
+                Verbal
+              </div>
+              <div class="scores"><b>61</b> / 100</div>
+            </div>
+            <div class="visual">
+              <div class="visual-text">
+                <img src="./assets/images/icon-visual.svg" alt="Visual Image" />
+                Visual
+              </div>
+              <div class="scores"><b>72</b> / 100</div>
+            </div>
+
+            <button>Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">PL Matlhape</a>.
+      </div>
+    </div>
+  </body>
+</html>
