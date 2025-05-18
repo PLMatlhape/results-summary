@@ -2,6 +2,19 @@
 
 ![Design preview for the Results summary component coding challenge](./preview.jpg)
 
+## Running the project: 
+1. Clone the repository:
+```bash
+  git clone https://github.com/PLMatlhape/results-summary.git
+```
+
+2. Navigate to the project folder:
+```bash
+  cd results-summary
+```
+
+3. Install the Live Server extension and run with Live Server
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
